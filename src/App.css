@@ -1,0 +1,24 @@
+.grid{
+  display : grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 70px;
+}
+
+.card{
+  width: 250px; 
+  height: 170px;
+  min-width: 250px;
+  min-height: 150px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card img{
+  width : 250px;
+  height : 130px;
+  min-height: 130px;
+  object-fit: cover;
+}
