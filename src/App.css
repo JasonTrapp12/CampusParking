@@ -40,7 +40,23 @@
 .open-modal-button {
   background-color: #F76902;
   color : white;
-  border-radius: 10%;
+  border-radius: 8px;
   border : none;
 
+}
+
+.review-button {
+  background-color: #F76902;
+  color : white;
+  border-radius: 8px;
+  border : none;
+  height : 39px;
+}
+
+.submit-button{
+  background-color: #F76902;
+  color : white;
+  border-radius: 8px;
+  border : none;
+  height : 39px;
 }

@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import ReviewModal from './ReviewModal';
 
-function ParkingLotModal() {
+function ParkingLotModal({image, name, description}) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -13,18 +14,24 @@ function ParkingLotModal() {
       <button className="open-modal-button" onClick={handleShow}>
         View Info
       </button>
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={show} onHide={handleClose} size="lg" centered>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>{name}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+        <Modal.Body>
+            <h4>
+            Description: 
+            </h4>
+            {description} 
+            <h4>
+            Crowding:
+            </h4>
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
+          <ReviewModal name={name}/>
         </Modal.Footer>
       </Modal>
     </>

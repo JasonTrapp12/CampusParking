@@ -1,17 +1,17 @@
 import React from "react";
 import ParkingLotModal from "./ParkingLotModal";
 
-const Card = ({ image, name }) => {
+const Card = ({ image, name, description }) => {
     const displayDetails = () => {
         console.log({name});
     }
 
     return(
-        <div className="card" onClick={ParkingLotModal.handleShow}>
+        <div className="card">
         <img src={image}></img>
         <div className="name-and-openbutton">
             <h2> {name} </h2>
-            <ParkingLotModal />
+            <ParkingLotModal image={image} name={name} description={description}/>
         </div>
         </div>
     )
