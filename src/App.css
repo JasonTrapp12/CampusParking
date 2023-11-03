@@ -2,6 +2,7 @@
   display : grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 70px;
+  padding: 1%;
 }
 
 .card{
@@ -59,4 +60,10 @@
   border-radius: 8px;
   border : none;
   height : 39px;
+}
+
+.title {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans‑serif;
+  color : black;
+  text-align: center;
 }

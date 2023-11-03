@@ -4,11 +4,14 @@ import Modal from 'react-bootstrap/Modal';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
 import Form from 'react-bootstrap/Form';
+import React from 'react';
+
 
 function ReviewModal( {name} ) {
   const [show, setShow] = useState(false);
   const [selectedTime, setSelectedTime] = useState(1);
   const [rating, setRating] = useState(0);
+
 
   const timeslots = [
     {name: '8-9AM', value: '1'},
@@ -20,6 +23,24 @@ function ReviewModal( {name} ) {
     {name: '2-3PM', value: '7'},
     {name: '3-4PM', value: '8'}
   ];
+
+  Submit = () => {
+    handleClose();
+    postMessage(lot={name}, time={selectedTime}, rating={rating})
+  }
+
+  postMessage(({lot, time, rating}) => {
+    const reqOptions = {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({id: 0, lot: {lot}, time: {time}, rating: {rating}})
+    };
+    fetch('https://campusparkingapi.onrender.com/addReview', requestOptions)
+    .then(response => response.json())
+    .then(data => setPostId(data.id))
+  },
+  []
+  );
 
   const handleTimeSelection = (time) => {
     console.log(time);
@@ -97,7 +118,7 @@ function ReviewModal( {name} ) {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <button className='submit-button' onClick={handleClose}>
+          <button className='submit-button' onClick={Submit}>
             Submit
           </button>
         </Modal.Footer>
