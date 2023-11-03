@@ -4,7 +4,7 @@ export const lotsData = [
         id : 1,
         name : "D Lot",
         image : "LotImages/DLot.jpg",
-        description : "bad parking"
+        description : "D-Lot is a medium-sized parking lot located next to Gordon Field House and the Welcome Center.  This lot is a short walk to many of the buildings located between Academic and Dorm sides, but its often full throughout the day.  The following types of parking are available: Handicapped, Reserved, General, Motorcycle, Electric Charging"
         
     },
     {
