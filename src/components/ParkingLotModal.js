@@ -24,7 +24,7 @@ function ParkingLotModal({image, name, description}) {
             </h4>
             {description} 
             <h4>
-            Crowding:
+            Crowding by Hour:
             </h4>
         </Modal.Body>
         <Modal.Footer>
