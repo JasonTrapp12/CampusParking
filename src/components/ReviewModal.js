@@ -24,23 +24,23 @@ function ReviewModal( {name} ) {
     {name: '3-4PM', value: '8'}
   ];
 
-  Submit = () => {
+  function Submit(){
     handleClose();
-    postMessage(lot={name}, time={selectedTime}, rating={rating})
+    console.log(name);
+    console.log(selectedTime);
+    console.log(rating);
+    postMessage(name, selectedTime, rating);
   }
 
-  postMessage(({lot, time, rating}) => {
+  const postMessage = (lot, time, rating) => {
     const reqOptions = {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({id: 0, lot: {lot}, time: {time}, rating: {rating}})
+      body: JSON.stringify({id: 0, lot: lot, time: time, rating: rating})
     };
-    fetch('https://campusparkingapi.onrender.com/addReview', requestOptions)
+    fetch('http://127.0.0.1:8000/addReview', reqOptions)
     .then(response => response.json())
-    .then(data => setPostId(data.id))
-  },
-  []
-  );
+  };
 
   const handleTimeSelection = (time) => {
     console.log(time);
