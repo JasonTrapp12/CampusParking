@@ -7,17 +7,6 @@ function ParkingLotModal({image, name, description}) {
   const [show, setShow] = useState(false);
   const [data, setData] = useState([]);
 
-  const timeslots = [
-    {name: '8-9AM', value: 0},
-    {name: '9-10AM', value: 0},
-    {name: '10-11AM', value: 0},
-    {name: '11-12PM', value: 0},
-    {name: '12-1PM', value: 0},
-    {name: '1-2PM', value: 0},
-    {name: '2-3PM', value: 0},
-    {name: '3-4PM', value: 0}
-  ];
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
