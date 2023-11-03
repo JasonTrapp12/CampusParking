@@ -14,7 +14,6 @@ body{
   height: 170px;
   min-width: 250px;
   min-height: 150px;
-  border: 10px solid black;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -46,8 +45,6 @@ body{
   background-color: #F76902;
   color : white;
   border-radius: 8px;
-  border : none;
-
 }
 
 .review-button {
@@ -71,4 +68,8 @@ body{
   color : #454545;
   text-align: center;
   font-weight: bold;
+}
+
+.time-review{
+  display: flex;
 }
