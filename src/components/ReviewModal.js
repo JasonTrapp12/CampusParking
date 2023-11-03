@@ -38,7 +38,7 @@ function ReviewModal( {name} ) {
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({id: 0, lot: lot, time: time, rating: rating})
     };
-    fetch('http://127.0.0.1:8000/addReview', reqOptions)
+    fetch('https://campusparkingapi.onrender.com/addReview', reqOptions)
     .then(response => response.json())
   };
 
