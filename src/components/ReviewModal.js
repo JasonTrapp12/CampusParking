@@ -43,7 +43,6 @@ function ReviewModal( {name} ) {
   };
 
   const handleTimeSelection = (time) => {
-    console.log(time);
     setSelectedTime(time);
   };
 
@@ -53,7 +52,9 @@ function ReviewModal( {name} ) {
   };
 
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = () => {
+    setShow(true);
+  }
 
   function getDescription(value) {
     switch (value) {
@@ -78,7 +79,7 @@ function ReviewModal( {name} ) {
         Review Crowding
     </button>
 
-      <Modal show={show} onHide={handleClose} size="lg" centered>
+      <Modal show={show} onHide={handleClose} size="lg" >
         <Modal.Header closeButton>
           <Modal.Title>Review busyness of {name} </Modal.Title>
         </Modal.Header>

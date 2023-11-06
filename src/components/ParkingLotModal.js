@@ -23,7 +23,9 @@ function ParkingLotModal({image, name, description}) {
     getReviews();
   }
 
-
+  function hideModal(){
+    handleClose();
+  }
 
   return (
     <>
@@ -57,7 +59,7 @@ function ParkingLotModal({image, name, description}) {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <ReviewModal name={name}/>
+          <ReviewModal name={name} funct={hideModal}/>
         </Modal.Footer>
       </Modal>
     </>
