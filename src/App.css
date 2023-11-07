@@ -73,3 +73,9 @@ body{
 .time-review{
   display: flex;
 }
+
+.top-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
