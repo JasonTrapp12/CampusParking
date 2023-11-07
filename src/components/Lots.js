@@ -19,14 +19,14 @@ export const lotsData = [
         id : 3,
         name : "H Lot",
         image : "LotImages/HLot.jpg",
-        description : "H-Lot is a large general overflow lot for F-Lot and is connected to G-Lot. Its a far walk, but this lot is generally meant for accessing Institute Hall, Engineering Hall, Orange Hall, Gosnell Hall, Booth Hall, and Liberal Arts Hall.",
+        description : "H-Lot is a large general overflow lot for F-Lot and is connected to G-Lot. Its a far walk, but this lot is generally used for Institute Hall, Engineering Hall, Orange Hall, Gosnell Hall, Booth Hall, and Liberal Arts Hall.",
         tags : ["general"]
     },
     {
         id : 4,
         name : "G Lot",
         image : "LotImages/GLot.jpg",
-        description : "G-Lot is a small overflow lot for E-Lot and is connected to H-Lot.  Its a far walk, but this lot is generally meant for accessing Institute Hall, Engineering Hall, Orange Hall, Gosnell Hall, Booth Hall, and Liberal Arts Hall.  The following types of parking are available: General, Handicapped",
+        description : "G-Lot is a small overflow lot for E-Lot and is connected to H-Lot.  Its a far walk, but this lot is generally used for Institute Hall, Engineering Hall, Orange Hall, Gosnell Hall, Booth Hall, and Liberal Arts Hall.  The following types of parking are available: General, Handicapped",
         tags : ["general, handicapped"]
     },
     {
@@ -89,21 +89,21 @@ export const lotsData = [
         id : 13,
         name : "K Lot",
         image : "LotImages/KLot.jpg",
-        description : "K-Lot is a large parking lot located outside of Sol Hall.  This lot it predominantly used for dorm parking.  The following types of parking are available: General",
+        description : "K-Lot is a large parking lot located outside of Sol Hall.  This lot is predominantly used for dorm parking.  The following types of parking are available: General",
         tags : ["general"]
     },
     {
         id : 14,
         name : "B Lot",
         image : "LotImages/BLot.jpg",
-        description : "B-Lot is a large parking lot located near dorms on Wiltsie Dr.  This lot it predominantly used for dorm parking.  The following types of parking are available: General & Resident",
+        description : "B-Lot is a large parking lot located near dorms on Wiltsie Dr.  This lot is predominantly used for dorm parking.  The following types of parking are available: General & Resident",
         tags : ["general"]
     },
     {
         id : 15,
         name : "A Lot",
         image : "LotImages/ALot.jpg",
-        description : "A-Lot is a small parking lot located near dorms on Wiltsie Dr.  This lot it predominantly used for dorm parking.  The following types of parking are available: General",
+        description : "A-Lot is a small parking lot located near dorms on Wiltsie Dr.  This lot is predominantly used for dorm parking.  The following types of parking are available: General",
         tags : ["general"]
     },
     {
