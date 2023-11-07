@@ -23,6 +23,7 @@ const filteredLotsData = lotsData.filter((lot) => {
     } else if(selectedOption === "Motorcycle Parking"){
         return lot.tags.includes("motorcycle");
     }
+    return false;
   });
 
     return (
