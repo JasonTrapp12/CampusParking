@@ -1,13 +1,20 @@
-import {auth, provider} from "../ParkingChat.js";
+import {auth, provider} from "./firebase";
 import {signInWithPopup} from 'firebase/auth'
 import Cookies from 'universal-cookie'
 const cookies = new Cookies()
 
-const Auth = () => {
+const Auth = (props) => {
+    const { setIsAuth } = props;
 
     const signInWithGoogle = async () => {
-        const result = await signInWithPopup(auth, provider)
-        cookies.set("auth-token", result.user.refreshToken)
+        try{
+            const result = await signInWithPopup(auth, provider)
+            cookies.set("auth-token", result.user.refreshToken)
+            setIsAuth(true); 
+        } catch(error){
+            console.error(error);
+        }
+        
     }
 
     return(
