@@ -1,13 +1,7 @@
 import React,  {useState} from "react";
-import {initializeApp} from "firebase/app";
-import {getAuth, GoogleAuthProvider} from "firebase/auth";
-import {getStorage} from "firebase/storage";
-import {getFirestore} from "firebase/firestore";
-import { getDatabase } from "firebase/database";
 import Auth from "./components/Auth";
 import ReportForm from "./components/ReportForm";
 import Cookies from 'universal-cookie';
-import firebase from "firebase/compat/app";
 
 const cookies = new Cookies()
 
