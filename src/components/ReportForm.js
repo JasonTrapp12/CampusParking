@@ -1,6 +1,7 @@
 import LotDropDown from "./LotDropdown";
 import React, { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
+import DiscordLink from "./DiscordLink";
 import {auth} from "./firebase";
 import { v4 as uuidv4 } from 'uuid';
 import { firestore } from "./firebase"
@@ -36,9 +37,11 @@ const ReportForm = () => {
 
     return(
         <div className="report-form">
-            <h1 className="report-title">Report Parking Security on Campus!</h1>
+            <h1 className="report-title">Report Parking Services on Campus!</h1>
             <LotDropDown className="lot-dropdown" updateReportData={updateReportData}></LotDropDown>
-            <button onClick={submitReport}>Submit</button>
+            <button className="submit-report" onClick={submitReport}>Submit</button>
+            <p1 className="discordp">Join us on discord to get real-time parking security updates:</p1>
+            <DiscordLink className="link"></DiscordLink>
         </div>
     );
 }

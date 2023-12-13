@@ -80,12 +80,51 @@ body{
   justify-content: center;
 }
 
-.report-form{
-  justify-content: center;
+.report-form {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
+  padding: 20px;
 }
 
-.lot-dropdown{
-  padding: 10%;
+.report-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.report-title {
+  font-size: 2em;
+  margin-bottom: 20px !important; /* Add !important to ensure it overrides other styles */
+}
+
+.lot-dropdown {
+  font-size: 1.5em;
+  margin-bottom: 20px !important; /* Add !important to ensure it overrides other styles */
+}
+
+
+.discordp{
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  font-weight: bold;
+}
+
+.link{
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+
+.submit-report {
+  
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px !important;
+  background-color: #F76902;
+  color : white;
+  border-radius: 8% !important;
+  border : none;
+  height : 39px;
 }
