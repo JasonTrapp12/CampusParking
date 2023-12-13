@@ -13,8 +13,9 @@ const ReportForm = () => {
     
     function updateReportData(lot,user,time){
         SetLot(lot);
+        console.log(auth.currentUser.displayName);
         SetUser(auth.currentUser.displayName ? auth.currentUser.uid : null);
-        SetTime(new Date().toISOString());
+        SetTime(new Date());
     }
 
     const submitReport = async (e) =>{
@@ -34,9 +35,9 @@ const ReportForm = () => {
     }
 
     return(
-        <div>
-            <h1>Report Parking Security on Campus!</h1>
-            <LotDropDown updateReportData={updateReportData}></LotDropDown>
+        <div className="report-form">
+            <h1 className="report-title">Report Parking Security on Campus!</h1>
+            <LotDropDown className="lot-dropdown" updateReportData={updateReportData}></LotDropDown>
             <button onClick={submitReport}>Submit</button>
         </div>
     );

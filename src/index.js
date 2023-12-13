@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     element: <App></App>,
   },
   {
-    path: "parking-chat",
+    path: "parking-club",
     element: <ParkingChat></ParkingChat>
   }
 ]);
